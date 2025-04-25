@@ -1,6 +1,6 @@
 {
-  "name": "react-masonry-css",
-  "version": "1.0.16",
+  "name": "@rahulmohan12/react-masonry-css",
+  "version": "1.0.17",
   "description": "React Masonry component leveraging CSS to be fast and responsive",
   "main": "dist/react-masonry-css.cjs.js",
   "module": "dist/react-masonry-css.module.js",
@@ -19,7 +19,7 @@
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paulcollett/react-masonry-css.git"
+    "url": "git+https://github.com/rahulmohan12/react-masonry-css.git"
   },
   "keywords": [
     "react",
@@ -29,12 +29,12 @@
     "masonary",
     "grid"
   ],
-  "author": "Paul Collett",
+  "author": "Paul Collett & Rahul Mohan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paulcollett/react-masonry-css/issues"
+    "url": "https://github.com/rahulmohan126/react-masonry-css/issues"
   },
-  "homepage": "https://github.com/paulcollett/react-masonry-css#readme",
+  "homepage": "https://github.com/rahulmohan126/react-masonry-css#readme",
   "peerDependencies": {
     "react": ">=16.0.0"
   },
