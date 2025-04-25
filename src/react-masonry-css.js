@@ -111,19 +111,19 @@ class Masonry extends React.Component {
 
   itemsInColumns() {
     const currentColumnCount = this.state.columnCount;
-    const itemsInColumns = new Array(currentColumnCount);
+    const itemsInColumns = Array.from({ length: currentColumnCount }, () => []);
 
     // Force children to be handled as an array
     const items = React.Children.toArray(this.props.children)
+    const columnHeights = Array(currentColumnCount).fill(0);
 
     for (let i = 0; i < items.length; i++) {
-      const columnIndex = i % currentColumnCount;
-
-      if(!itemsInColumns[columnIndex]) {
-        itemsInColumns[columnIndex] = [];
-      }
+      const columnIndex = columnHeights.indexOf(Math.min(...columnHeights));
+      console.log(columnHeights);
+      console.log(columnIndex);
 
       itemsInColumns[columnIndex].push(items[i]);
+      columnHeights[columnIndex] += items[i].props.height || 1;
     }
 
     return itemsInColumns;
